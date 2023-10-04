@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
-    <title>APIs</title>
-</head>
-<body>
-    <p class="name"></p>
-    <p class="blog"></p>
 
-  <script src="../assets/js/app.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css"><!--Se acomodo el url link-->
+  <title>APIs</title>
+</head>
+
+<body>
+  <div class="wrapper"><!--Div wrapper, falta el box pero no supe la funcionalidad objetivo-->
+    <h2>Datos de GitHub</h2>
+
+    <table><!--Tabla añadida por estilos de css-->
+      <tr>
+        <th>Nombre</th>
+        <th>Blog</th>
+        <th>Ubicacion</th>
+      </tr>
+      <tr>
+        <th>
+          <p><span class="name">cargando...</span></p>
+        </th>
+        <th>
+          <p><span class="blog">cargando...</span></p>
+        </th>
+        <th>
+          <p> <span class="location">cargando...</span></p>
+        </th>
+      </tr>
+    </table>
+
+
+
+
+    <input type="button" value="Actualizar/buscar"
+      onclick="displayUser('stolinski').catch(handleError);"><!-- Se agregó boton para actualizar campos-->
+
+    <fieldset><!--For,ulario dentro del fielset-->
+      <legend>Formulario</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
+    </fieldset>
+
+
+    <!-- Se agregan elementos HTML para mostrar los datos de GitHub -->
+
+  </div>
+
+  <script src="assets/js/app.js"></script><!--Se acomodo url link-->
 </body>
+
 </html>
